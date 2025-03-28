@@ -1,0 +1,140 @@
+using System;
+using System.CodeDom.Compiler;
+using System.Diagnostics;
+using Google.Protobuf;
+using Google.Protobuf.Collections;
+using Google.Protobuf.Reflection;
+
+namespace Protocol
+{
+	[DebuggerDisplay("{ToString(),nq}")]
+	public sealed class ColosseumTarot : IMessage<ColosseumTarot>, IMessage, IEquatable<ColosseumTarot>, IDeepCloneable<ColosseumTarot>, IBufferMessage
+	{
+		private static readonly MessageParser<ColosseumTarot> _parser;
+
+		private UnknownFieldSet _unknownFields;
+
+		public const int IdFieldNumber = 1;
+
+		private int id_;
+
+		public const int WorldTriggersFieldNumber = 2;
+
+		private static readonly FieldCodec<WorldTrigger> _repeated_worldTriggers_codec;
+
+		private readonly RepeatedField<WorldTrigger> worldTriggers_;
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public static MessageParser<ColosseumTarot> Parser => null;
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		public static MessageDescriptor Descriptor => null;
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		MessageDescriptor IMessage.Descriptor => null;
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		public int Id
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		public RepeatedField<WorldTrigger> WorldTriggers => null;
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public ColosseumTarot()
+		{
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public ColosseumTarot(ColosseumTarot other)
+		{
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public ColosseumTarot Clone()
+		{
+			return null;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public override bool Equals(object other)
+		{
+			return false;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public bool Equals(ColosseumTarot other)
+		{
+			return false;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public override int GetHashCode()
+		{
+			return 0;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public override string ToString()
+		{
+			return null;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public void WriteTo(CodedOutputStream output)
+		{
+		}
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		void IBufferMessage.InternalWriteTo(ref WriteContext output)
+		{
+		}
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		public int CalculateSize()
+		{
+			return 0;
+		}
+
+		[DebuggerNonUserCode]
+		[GeneratedCode("protoc", null)]
+		public void MergeFrom(ColosseumTarot other)
+		{
+		}
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		public void MergeFrom(CodedInputStream input)
+		{
+		}
+
+		[GeneratedCode("protoc", null)]
+		[DebuggerNonUserCode]
+		void IBufferMessage.InternalMergeFrom(ref ParseContext input)
+		{
+		}
+	}
+}
